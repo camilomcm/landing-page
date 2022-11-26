@@ -38,8 +38,14 @@ nav {
 
 nav a {
   text-decoration: none;
-  /* background-color: yellow; */
   margin: 0 30px;
+  
+  transition: color 0.5s, font-size 0.5s;
+}
+
+nav a:hover {
+  color: #FD2020;
+  font-size: 1.05rem;
 }
 
 body {
@@ -71,6 +77,10 @@ h2 {
   width: 60%;
 }
 
+input:focus{
+  outline: none;
+}
+
 #submit {
   margin: 15px 0;
   border-radius: 5px;
@@ -82,6 +92,13 @@ h2 {
   font-weight: bold;
   background-color: #f95959;
   padding: 5px 10px;
+
+  transition: background-color 0.5s;
+}
+
+#submit:hover {
+  background-color: #FD2020;
+  cursor: pointer;
 }
 
 ::placeholder {
@@ -171,6 +188,13 @@ h4 {
   width: 35%;
   margin: 30px auto 15px;
   padding: 10px;
+
+  transition: background-color 0.5s;
+}
+
+#select:hover {
+  background-color: #FD2020; 
+  cursor: pointer;
 }
 
 footer {
